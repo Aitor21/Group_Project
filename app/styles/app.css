@@ -1,0 +1,29 @@
+.panel{
+	border-height:100%;
+	border-width:100%;
+	background-color:black;
+}
+#red {
+	position:absolute;
+	border-height:100%;
+	border-width:100%;
+	background-color:red;
+}
+#blue{
+	position:absolute;
+	border-height:100%;
+	border-width:100%;
+	background-color:blue;
+}
+#yellow{
+	position:absolute;
+	hight:100%;
+	width: 25%;
+	background-color:yellow;
+}
+#green{
+	position:absolute;
+	hight:100%;
+	width: 25%;
+	background-color:green;
+}
