@@ -33,21 +33,21 @@
 <info part="org.eclipse.ui.internal.EditorStack@191ac89">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="2"/>
 <part id="3"/>
 <part id="1"/>
+<part id="2"/>
+<part id="0"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="app.js" partName="app.js" title="app.js" tooltip="/home/user/Group_Project/app/scripts/app.js" workbook="org.eclipse.ui.internal.EditorStack@191ac89">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/user/Group_Project/app/scripts/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="133" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1498" selectionTopPixel="163"/>
 </editor>
 <editor id="org.eclipse.wst.css.core.csssource.source" name="main.css" partName="main.css" title="main.css" tooltip="/home/user/Group_Project/app/styles/main.css" workbook="org.eclipse.ui.internal.EditorStack@191ac89">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/user/Group_Project/app/styles/main.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="433" selectionTopPixel="146"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="769" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="main.js" partName="main.js" title="main.js" tooltip="/home/user/Group_Project/app/scripts/main.js" workbook="org.eclipse.ui.internal.EditorStack@191ac89">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/user/Group_Project/app/scripts/main.js"/>
@@ -55,7 +55,7 @@
 </editor>
 <editor id="org.eclipse.wst.html.core.htmlsource.source" name="index.html" partName="index.html" title="index.html" tooltip="/home/user/Group_Project/app/index.html" workbook="org.eclipse.ui.internal.EditorStack@191ac89">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/user/Group_Project/app/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1583" selectionTopPixel="316"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="861" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -120,13 +120,8 @@
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.TaskList"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@1eaf1d1" orientation="512" selectedTabId="org.eclipse.ui.internal.introview" style="0">
-<fastViews>
-<view id="org.eclipse.ui.internal.introview" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
@@ -141,11 +136,13 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1eaf1d1" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="0">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info part="org.eclipse.gef.ui.palette_view" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft"/>
@@ -175,162 +172,160 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" uri="file:/home/user/Group_Project/app/scripts/main.js"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" uri="file:/home/user/Group_Project/app/scripts/app.js"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" uri="file:/home/user/Group_Project/app/styles/main.css"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" uri="file:/home/user/Group_Project/app/scripts/main.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" uri="file:/home/user/Group_Project/app/styles/main.css"/>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.html.core.htmlsource.source" uri="file:/home/user/Group_Project/app/index.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" uri="file:/home/user/Group_Project/app/styles/app.css"/>
 </editors>
-<item historyLabel="main.js" index="0">
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="911" y="0"/>
+</item>
+<item historyLabel="main.css" index="2">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="main.css" index="2">
+<position/>
+</item>
+<item historyLabel="main.js" index="1">
 <position info="not_deleted" x="254" y="0"/>
 </item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="18" y="0"/>
+<item historyLabel="app.js" index="0">
+<position/>
 </item>
-<item historyLabel="main.js" index="0">
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="main.js" index="1">
 <position info="not_deleted" x="254" y="0"/>
 </item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="18" y="0"/>
+<item historyLabel="main.css" index="2">
+<position/>
 </item>
-<item historyLabel="app.js" index="1">
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="1094" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="918" y="0"/>
+</item>
+<item historyLabel="main.css" index="2">
+<position/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
 <position info="not_deleted" x="98" y="0"/>
 </item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="100" y="0"/>
-</item>
 <item historyLabel="main.css" index="2">
-<position info="not_deleted" x="387" y="0"/>
+<position/>
 </item>
-<item historyLabel="main.js" index="3">
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="821" y="0"/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="649" y="0"/>
+</item>
+<item historyLabel="main.js" index="1">
 <position info="not_deleted" x="254" y="0"/>
 </item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1173" y="0"/>
+<item historyLabel="main.css" index="2">
+<position/>
 </item>
-<item historyLabel="main.js" index="3">
-<position info="not_deleted" x="254" y="0"/>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="827" y="0"/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="684" y="0"/>
 </item>
 <item historyLabel="main.css" index="2">
 <position/>
 </item>
-<item historyLabel="main.js" index="3">
-<position info="not_deleted" x="254" y="0"/>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
 </item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1173" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
+<item historyLabel="app.js" index="0">
 <position/>
 </item>
-<item historyLabel="index.html" index="4">
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="861" y="0"/>
+</item>
+<item active="true" historyLabel="app.js" index="0">
 <position/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="522" y="0"/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1535" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="734" y="0"/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1589" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1425" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1425" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1425" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="387" y="0"/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1359" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="708" y="0"/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1359" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="387" y="375"/>
-</item>
-<item historyLabel="app.css" index="5">
-<position/>
-</item>
-<item historyLabel="app.js" index="1">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="main.js" index="3">
-<position info="not_deleted" x="254" y="0"/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="715" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="387" y="375"/>
-</item>
-<item historyLabel="app.css" index="5">
-<position/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="387" y="375"/>
-</item>
-<item historyLabel="app.css" index="5">
-<position info="not_deleted" x="48" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="387" y="375"/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="855" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1476" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1476" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="387" y="0"/>
-</item>
-<item historyLabel="index.html" index="4">
-<position info="not_deleted" x="1583" y="0"/>
-</item>
-<item historyLabel="main.css" index="2">
-<position info="not_deleted" x="433" y="0"/>
-</item>
-<item historyLabel="main.js" index="3">
-<position info="not_deleted" x="254" y="0"/>
-</item>
-<item active="true" historyLabel="app.js" index="1">
-<position info="not_deleted" x="162" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
