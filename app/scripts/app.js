@@ -29,16 +29,16 @@ define([], function () {
                var thisId = $(this).attr('id')
                if(thisId === buttonList[0]) {
                  userClicks.push(thisId)
-                 highlight($(this), "yellow")
+                 highlight($(this), "2A47BC")
                } else if ( thisId === buttonList[1]) {
                  userClicks.push(thisId)
-                 highlight($(this), "#aa0")
+                 highlight($(this), "42BC2A")
                } else if ( thisId === buttonList[2]) {
                  userClicks.push(thisId)
-                 highlight($(this), "#00a")
+                 highlight($(this), "D3CE2E")
                } else if ( thisId === buttonList[3]) {
                  userClicks.push(thisId)
-                 highlight($(this), "#0a0")
+                 highlight($(this), "D32E2E")
                } else {
                  console.log("Wrong button ID detected")
                }
