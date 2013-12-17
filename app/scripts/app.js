@@ -1,8 +1,90 @@
 /*global define */
 define([], function () {
     'use strict';
-    
-    $(document).ready(function(){
+    var highlight = function(button, color) {
+        var oldColor = button.css("background-color")
+        button.css("background-color", color).dequeue()
+              .delay(300)
+              .queue( function() {
+                      button.css("background-color", oldColor).dequeue()
+                    })
+      }
+
+      var showSequence = function(seq) {
+         for(var id in seq) {
+            (function(id){
+              setTimeout( function() {
+                highlight($("#"+seq[id]), "#fff")
+              }, 600*id)
+            })(id)
+         }
+      } 
+         /*setTimeout( function() {
+             userPlay = true;
+           }, 600*seq.length)*/
+           
+         
+        
+      /*var userPlaying=false;*/
+      var userClicks = new Array();
+      var buttonList;
+      var computerSequence = new Array();
+      
+      $(document).ready(function() {
+    	  alert("Bienvenido");
+    	  //conseguir que se inicialice el juego y que se ejecute una nueva secuencia despues de que el usuario clickase en el boton correcto
+    	  /*initialize()
+    		  generateComputerSequence()
+    		  showComputerSequence()
+    		  $('.button').click(function(){
+    		  	if(userPlaying){
+    		  	// codigo de user sequence
+    		  	}
+    		  })
+    		  userSequence()
+    		  if(!compareSequence()){
+    			  break;
+    		  }
+    	   }*/
+          buttonList = jQuery.map( $(".button"),
+                         function(element) {
+                           return $(element).attr('id')
+                         })
+          $(".button").click( function(){
+               computerSequence.push( buttonList[
+                                        Math.floor(Math.random()
+                                          * buttonList.length)] )
+               console.log(computerSequence)
+               showSequence( computerSequence )
+               /*
+               var thisId = $(this).attr('id')
+               if(thisId === buttonList[0]) {
+                 userClicks.push(thisId);
+                 highlight($(this), "2A47BC");
+               } else if ( thisId === buttonList[1]) {
+                 userClicks.push(thisId);
+                 highlight($(this), "#42BC2A");
+               } else if ( thisId === buttonList[2]) {
+                 userClicks.push(thisId);
+                 highlight($(this), "#D3CE2E");
+               } else if ( thisId === buttonList[3]) {
+                 userClicks.push(thisId);
+                 highlight($(this), "D32E2E");
+               } else {
+                 console.log("Wrong button ID detected");
+               }
+               */
+               //console.log(userClicks)
+          })
+      })
+
+      return '\'Allo \'Allo!';
+  });
+
+
+
+
+/*    $(document).ready(function(){
     alert("Bienvenido");
     var highlight = function(button, color) {
         var oldColor = button.css("background-color")
@@ -14,7 +96,7 @@ define([], function () {
       
       var userClicks = new Array()
       var buttonList
-      var computerSequence = new Array()
+      var random = new Array()
       
       $(document).ready(function() {
           buttonList = jQuery.map( $(".button"),
@@ -22,102 +104,49 @@ define([], function () {
                            return $(element).attr('id')
                          })
           $(".button").click( function(){
-               computerSequence.push( buttonList[
+               random.push( buttonList[
                                         Math.floor(Math.random()
                                           * buttonList.length)] )
-               console.log(computerSequence)
+               console.log(random)
                var thisId = $(this).attr('id')
                if(thisId === buttonList[0]) {
-                 userClicks.push(thisId)
-                 highlight($(this), "2A47BC")
+                 userClicks.push(thisId);
+                 highlight($(this), "2A47BC");
                } else if ( thisId === buttonList[1]) {
-                 userClicks.push(thisId)
-                 highlight($(this), "42BC2A")
+                 userClicks.push(thisId);
+                 highlight($(this), "42BC2A");
                } else if ( thisId === buttonList[2]) {
-                 userClicks.push(thisId)
-                 highlight($(this), "D3CE2E")
+                 userClicks.push(thisId);
+                 highlight($(this), "D3CE2E");
                } else if ( thisId === buttonList[3]) {
-                 userClicks.push(thisId)
-                 highlight($(this), "D32E2E")
+                 userClicks.push(thisId);
+                 highlight($(this), "D32E2E");
                } else {
                  console.log("Wrong button ID detected")
                }
-               //console.log(userClicks)
+               console.log(userClicks);
           })
+         for ( var i = 0; i <= random.length; i++ ){
+        	 random[i];
+        	 if(random[i] === buttonList[0]){
+        		 highlight($(this), "2A47BC")
+        	 } 
+        	 else if(random[i] === buttonList[1]){
+        		 highlight($(this), "42BC2A")
+        	 }
+        	 else if(random[i] === buttonList[2]){
+        		 highlight($(this), "D3CE2E")
+        	 }
+        	 else if(random[i] === buttonList[3]){
+        		 highlight($(this), "D32E2E")
+        	 }
+        	 else{
+        		 console.log("NO!")
+        	 }
+         } 
       })
-   /* var buttonList;
-    var computerSequence = new Array();
-    
-    buttonList = jQuery.map( $(".button"),
-    		function(element){
-    	return $(element).attr('id');
-    })
-    $(".button").click(function(){
-    	computerSequence.push(buttonList[
-    	                                 Math.floor(Math.random()
-    	                                		 *buttonList.length)])
-    }
-    console.log(computerSequence)
-    var thisId = $ (this)attr
-    var highlight = function(button, color){
-    	var oldColor = button.css("background-color")
-    	button.css("background-color", color);
-    	setTimeout(function(){
-    		button.css("background-color", oldColor)
-    	}, 200)
-    }
- 
-    var userClicks = new Array()
-    $(".button").click(function(){
-  		var thisId = $(this).attr('id')
-  			if(thisId === "blue"){
-  				userClicks.push(thisId);
-  				highlight($(this), "red")
-  			}else if (thisId === 'red'){
-  				userClicks.push(thisId);
-  				highlight($(this), "blue")
-  			}else if (thisId=== "green"){
-  				userClicks.push(thisId);
-  				highlight($(this), "yellow")
-  		  	}else if (thisId === "yellow"){
-  		  		userClicks.push(thisId);
-  		  		highlight($(this), "green")
-  		  	}else{
-  		  		console.log("No funciona")
-  		  	}
-  		console.log(userClicks);
-    }) */
-    
-   /* $("#blue").hover(function(){
-    	  $("#blue").css("background-color","#207ce5");
-    	  },function(){
-    	  $("#blue").css("background-color","blue");
-    	});
-    $("#red").hover(function(){
-  	  $("#red").css("background-color","#e73827");
-  	  },function(){
-  	  $("#red").css("background-color","red");
-  	});
-    $("#green").hover(function(){
-  	  $("#green").css("background-color","#91e842");
-  	  },function(){
-  	  $("#green").css("background-color","green");
-  	});
-    $("#yellow").hover(function(){
-  	  $("#yellow").css("background-color","#f2fa05");
-  	  },function(){
-  	  $("#yellow").css("background-color","yellow");
-  	  });	*/
-  		
-    return '\'Allo \'Allo!';
+      
+	return '\'Allo \'Allo!';
 })
 })
-
-
-
-var buttonList;
-
-buttonList = jQuery.map( $(".button"),
-		function(element){
-	return $(element).attr('id');
-})
+*/
